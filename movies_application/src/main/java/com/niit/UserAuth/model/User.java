@@ -16,8 +16,8 @@ public class User {
     @Id
     //@GeneratedValue
     //  private int id;
-    private String useremail;
+    private String emailid;
     private String username;
-    private long userMobileNumber;
+    private int mobilenumber;
     private String password;
 }

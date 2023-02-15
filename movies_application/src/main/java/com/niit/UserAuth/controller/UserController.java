@@ -32,7 +32,7 @@ public class UserController {
     // @CrossOrigin(origins = "http://localhost:52110")
     @PostMapping("/login")
     public ResponseEntity<?> loginCheck(@RequestBody User user) {
-        User result = userService.login(user.getUseremail(), user.getPassword());
+        User result = userService.login(user.getEmailid(), user.getPassword());
         if (result != null) {
             Map<String, String> key = securityTokenGenerator.generateToken(user);
             return new ResponseEntity<>(key, HttpStatus.OK);
