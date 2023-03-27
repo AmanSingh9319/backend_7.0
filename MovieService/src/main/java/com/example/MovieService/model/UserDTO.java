@@ -19,9 +19,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 public class UserDTO {
 
-    private String emailid;
+    private String email;
     private String username;
-    private int mobilenumber;
+    private long phoneNumber;
     private String password;
 
 }

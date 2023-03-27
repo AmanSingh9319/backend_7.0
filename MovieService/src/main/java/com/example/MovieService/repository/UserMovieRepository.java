@@ -9,8 +9,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface Movierepository extends MongoRepository<User, String> {
+public interface UserMovieRepository extends MongoRepository<User, String> {
     @Query("{'movies.moviename':{$in:[?0]}}")
         // @Query("{'product.productname':{$in:[?0]}}")
     List<Movie> findMovieName(String moviename);
+
 }

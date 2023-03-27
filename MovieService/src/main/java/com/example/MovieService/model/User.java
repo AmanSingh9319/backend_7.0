@@ -21,11 +21,11 @@ import java.util.List;
 @EqualsAndHashCode
 public class User {
     @Id
-    private String emailid;
+    private String email;
     private String username;
-    private int mobilenumber;
+    private long phoneNumber;
     private String password;
-    private List<Movie> movies;
+    private List<Movie> movieList;
 
 
 }
